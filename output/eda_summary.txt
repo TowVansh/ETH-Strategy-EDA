@@ -1,0 +1,37 @@
+Data: 118040 bars, 2019-11-27 10:30:00 .. 2026-08-21 14:00:00
+
+Baseline mean net return per trade by indicator quintile (Q1 = lowest):
+  ATR % of price             Q1=+0.008  Q2=-0.031  Q3=-0.007  Q4=-0.060  Q5=-0.102
+  DMI spread (+DI - -DI)     Q1=-0.005  Q2=-0.006  Q3=-0.133  Q4=-0.088  Q5=+0.040
+  Stochastic %K              Q1=-0.009  Q2=-0.047  Q3=-0.039  Q4=-0.060  Q5=-0.037
+  Bollinger width %          Q1=-0.066  Q2=-0.003  Q3=-0.014  Q4=-0.064  Q5=-0.045
+
+Trigger summary (baseline):
+           trades  win_rate  mean_net
+trigger                              
+bb_cross      934     0.465    -0.206
+dmi_trend    2758     0.540     0.018
+
+Holding time (baseline):
+                mean    win     n
+duration_bars                    
+<=3h           0.104  0.568  1898
+3-6h          -0.231  0.456   699
+6-12h         -0.192  0.469   605
+12-24h        -0.153  0.482   338
+>24h          -0.060  0.513   152
+
+Baseline: trades=3692 win%=52.1 gross=227.5% net=-141.7% maxDD=198.1 calmar=-0.715 fit=-0.706 holdout=-0.51 positive_years=2/8
+Optimized: trades=1534 win%=46.3 gross=245.8% net=92.4% maxDD=40.3 calmar=2.293 fit=1.604 holdout=1.066 positive_years=6/8
+
+Yearly net return:
+      baseline  optimized
+year                     
+2019      -5.8        4.6
+2020       7.2       38.3
+2021     -63.2       11.4
+2022      -9.1       33.8
+2023     -36.2      -23.5
+2024      10.4        1.3
+2025     -30.4       33.9
+2026     -14.6       -7.4
